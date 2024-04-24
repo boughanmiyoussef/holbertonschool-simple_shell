@@ -1,4 +1,3 @@
-
 #include "shell.h"
 
 /**
@@ -10,38 +9,44 @@
  */
 char *get_path(char *command)
 {
-	char *path_copy = NULL;
-	char *full_path = NULL;
-	char *token = NULL;
+    char *path_copy = NULL;
+    char *full_path = NULL;
+    char *token = NULL;
 
-	if (strchr(command, '/') != NULL)
-	{
-		return (strdup(command));
-	}
+    if (strchr(command, '/') != NULL)
+    {
+        return strdup(command);
+    }
 
-	path_copy = _getenv("PATH");
-	token = strtok(path_copy, ":");
+    path_copy = _getenv("PATH");
+    if (path_copy == NULL)
+    {
+        fprintf(stderr, "PATH environment variable is not set\n");
+        return NULL;
+    }
 
-	while (token != NULL)
-	{
-		full_path = malloc(strlen(token) + strlen(command) + 2);
-		if (full_path == NULL)
-		{
-			perror("Malloc is NULL");
-			return (NULL);
-		}
+    token = strtok(path_copy, ":");
+    while (token != NULL)
+    {
+        full_path = malloc(strlen(token) + strlen(command) + 2);
+        if (full_path == NULL)
+        {
+            perror("Malloc failed");
+            free(path_copy);
+            return NULL;
+        }
 
-		sprintf(full_path, "%s/%s", token, command);
+        sprintf(full_path, "%s/%s", token, command);
 
-		if (access(full_path, X_OK) == 0)
-		{
-			free(path_copy);
-			return (full_path);
-		}
+        if (access(full_path, X_OK) == 0)
+        {
+            free(path_copy);
+            return full_path;
+        }
 
-		free(full_path);
-		token = strtok(NULL, ":");
-	}
-	free(path_copy);
-	return (NULL);
+        free(full_path);
+        token = strtok(NULL, ":");
+    }
+    free(path_copy);
+    return NULL;
 }
