@@ -7,12 +7,12 @@
  */
 int _printenv(void)
 {
-    int i = 0;
+int i = 0;
 
-    while (environ[i] != NULL)
-    {
-        printf("%s\n", environ[i]);
-        i++;
-    }
-    return (0);
+while (environ[i] != NULL)
+{
+printf("%s\n", environ[i]);
+i++;
+}
+return (0);
 }
