@@ -111,5 +111,5 @@ Bassem Krayem
 
 ## Flowchart
 
-![Simple Shell Flowchart](path/to/your/flowchart/image.png)
+![Simple Shell Flowchart](https://github.com/boughanmiyoussef/holbertonschool-simple_shell/blob/main/resources/C%20-%20Simple%20shell%20flowchart.png)
 
