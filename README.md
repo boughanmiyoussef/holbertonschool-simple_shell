@@ -34,8 +34,6 @@ It consists of a command line interface (CLI) (as opposed to a graphical user in
 ## Compilation command
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
-```
-
 Mandatory Tasks
 Task 0. README, man, AUTHORS
 Write a README
@@ -43,9 +41,14 @@ Write a man for your shell.
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
 Task 1. Betty would be proud
 Write a beautiful code that passes the Betty checks.
+
 Task 2. Simple shell 0.1
 Write a UNIX command line interpreter.
-Usage: ./hsh
+
+Usage:
+bash
+
+./hsh
 Your Shell should:
 Display a prompt and wait for the user to type a command. A command line always ends with a new line.
 The prompt is displayed again each time a command has been executed.
@@ -61,18 +64,25 @@ handle special characters : ", ', `, , *, &, #
 Task 3. Simple shell 0.2
 Simple shell 0.1 +
 Handle command lines with arguments
+
 Task 4. Simple shell 0.3
 Simple shell 0.2 +
 Handle the PATH
 fork must not be called if the command doesn’t exist
+
 Task 5. Simple shell 0.4
 Simple shell 0.3 +
 Implement the exit built-in, that exits the shell
-Usage: exit
+
+Usage:
+bash
+
+exit
 You don’t have to handle any argument to the built-in exit
 Task 6. Simple shell 1.0
 Simple shell 0.4 +
 Implement the env built-in, that prints the current environment
+
 MAN page
 Run man ./man_1_simple_shell
 
@@ -80,17 +90,19 @@ Installation
 Install and run:
 To install and run Simple Shell, follow these steps:
 
-1-Clone the repository using the following command:
+Clone the repository using the following command:
+bash
+
 git clone https://github.com/boughanmiyoussef/holbertonschool-simple_shell
+Navigate to the directory where the repository was cloned.
+Compile the program by running the following command:
+bash
 
-
-2-Navigate to the directory where the repository was cloned.
-3-Compile the program by running the following command:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o .hsh
+Run the program by typing the following command:
+bash
 
-4-Run the program by typing the following command:
 ./hsh
-
 Using the Simple Shell:
 To use our Simple Shell, type a command and press Enter.
 
@@ -108,7 +120,8 @@ Many warm thanks to all the Holberton School peers who helped and brought joy th
 
 Authors
 Youssef Boughanmi
-Bassem Krayem"
+Bassem Krayem
+vbnet
 
 ## Flowchart
 
