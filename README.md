@@ -33,7 +33,7 @@ It consists of a command line interface (CLI) (as opposed to a graphical user in
 
 ## Compilation command
 ```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh```
 
 Mandatory Tasks
 Task 0. README, man, AUTHORS
@@ -107,7 +107,7 @@ Many warm thanks to all the Holberton School peers who helped and brought joy th
 
 Authors
 Youssef Boughanmi
-Bassem Krayem
+Bassem Krayem"
 
 ## Flowchart
 
