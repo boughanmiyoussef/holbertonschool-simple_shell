@@ -33,7 +33,8 @@ It consists of a command line interface (CLI) (as opposed to a graphical user in
 
 ## Compilation command
 ```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+```bash
 
 Mandatory Tasks
 Task 0. README, man, AUTHORS
