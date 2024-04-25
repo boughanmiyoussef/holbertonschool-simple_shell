@@ -10,11 +10,36 @@
 int main(void)
 {
 	char *line = NULL;
+	char *username = getlogin();
+	char cwd[1024];
+	char hostname[1024];
 
 	while (1)
 	{
 		if (isatty(STDIN_FILENO) == 1)
 		{
+			if (username != NULL)
+			{
+				printf("%s@", username);
+			}
+			if (gethostname(hostname, sizeof(hostname)) != -1)
+			{
+				printf("%s:", hostname);
+			}
+			else
+			{
+				perror("gethostname() error");
+				return EXIT_FAILURE;
+			}
+			if (getcwd(cwd, sizeof(cwd)) != NULL)
+			{
+				printf("%s ", cwd);
+			}
+			else
+			{
+				perror("getcwd() error");
+				return EXIT_FAILURE;
+			}
 			printf("$ ");
 			fflush(stdout);
 		}
