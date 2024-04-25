@@ -1,6 +1,7 @@
 # C - Simple Shell
 
 ## Table of Contents
+
 - [Objective](#objective)
 - [Description](#description)
 - [Requirements](#requirements)
@@ -13,14 +14,17 @@
 - [Authors](#authors)
 
 ## Objective
+
 Write a simple UNIX command language interpreter.
 
 ## Description
+
 The "C - Simple Shell" project is about creating our own simplified version of the [shell]. Shell is a program taking commands from the keyboard and giving them to the operating system to perform.
 
 It consists of a command line interface (CLI) (as opposed to a graphical user interface(GUI) available on most computer nowadays). Most Linux systems provide a program call bash (standing for Bourne Again SHell) an enhanced version of the original Unix shell program, sh, written by Steve Bourne, and acting a the shell program.
 
 ## Requirements
+
 - Allowed editors: vi, vim, emacs
 - All files will be compiled on Ubuntu 20.04 LTS
 - Code must follow the Betty style
@@ -32,17 +36,24 @@ It consists of a command line interface (CLI) (as opposed to a graphical user in
 - All your header files should be include guarded
 
 ## Compilation command
+
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
-Mandatory Tasks
-Task 0. README, man, AUTHORS
+
+## Mandatory Tasks
+
+### Task 0. README, man, AUTHORS
+
 Write a README
 Write a man for your shell.
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
-Task 1. Betty would be proud
+
+### Task 1. Betty would be proud
+
 Write a beautiful code that passes the Betty checks.
 
-Task 2. Simple shell 0.1
+### Task 2. Simple shell 0.1
+
 Write a UNIX command line interpreter.
 
 Usage:
@@ -61,49 +72,53 @@ You don’t have to:
 use the PATH
 implement built-ins
 handle special characters : ", ', `, , *, &, #
-Task 3. Simple shell 0.2
+
+### Task 3. Simple shell 0.2
+
 Simple shell 0.1 +
 Handle command lines with arguments
 
-Task 4. Simple shell 0.3
+### Task 4. Simple shell 0.3
+
 Simple shell 0.2 +
 Handle the PATH
 fork must not be called if the command doesn’t exist
 
-Task 5. Simple shell 0.4
+### Task 5. Simple shell 0.4
+
 Simple shell 0.3 +
 Implement the exit built-in, that exits the shell
 
-Usage:
-bash
-
-exit
+Usage: exit
 You don’t have to handle any argument to the built-in exit
-Task 6. Simple shell 1.0
+
+### Task 6. Simple shell 1.0
+
 Simple shell 0.4 +
 Implement the env built-in, that prints the current environment
 
-MAN page
+## MAN page
+
 Run man ./man_1_simple_shell
 
-Installation
+## Installation
+
 Install and run:
 To install and run Simple Shell, follow these steps:
 
 Clone the repository using the following command:
-bash
 
 git clone https://github.com/boughanmiyoussef/holbertonschool-simple_shell
 Navigate to the directory where the repository was cloned.
 Compile the program by running the following command:
-bash
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o .hsh
 Run the program by typing the following command:
-bash
 
 ./hsh
-Using the Simple Shell:
+
+## Using the Simple Shell:
+
 To use our Simple Shell, type a command and press Enter.
 
 The program will execute the command and display the output on the screen.
@@ -115,15 +130,14 @@ pwd: print the path of the current working directory.
 echo: display a message on the screen.
 mkdir: create a new directory.
 exit: exit the shell.
-Thanks
-Many warm thanks to all the Holberton School peers who helped and brought joy throughout the many challenges of this project.
 
-Authors
-Youssef Boughanmi
-Bassem Krayem
-vbnet
+## Thanks
+
+Many warm thanks to all the Holberton School peers who helped and brought joy throughout the many challenges of this project.
 
 ## Flowchart
 
-![Simple Shell Flowchart](https://github.com/boughanmiyoussef/holbertonschool-simple_shell/blob/main/resources/C%20-%20Simple%20shell%20flowchart.png)
+![Simple Shell Flowchart]
+(https://github.com/boughanmiyoussef/holbertonschool-simple_shell/blob/main/resources/C%20-%20Simple%20shell%20flowchart.png)
 
+```
