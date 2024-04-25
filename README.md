@@ -16,8 +16,7 @@ Write code that passes the Betty style checks.
 ### Task 2: Simple shell 0.1
 Write a UNIX command line interpreter.
 
-#### Usage:
-`./hsh`
+#### Usage:`./hsh`
 
 - Display a prompt and wait for user input.
 - Display the prompt again after each command.
@@ -34,8 +33,7 @@ Simple shell 0.2 + Handle the PATH. Avoid calling fork if the command doesn’t 
 ### Task 5: Simple shell 0.4
 Simple shell 0.3 + Implement the exit built-in to exit the shell.
 
-#### Usage:
-`exit`
+#### Usage:`exit`
 
 No arguments are required for the exit built-in.
 
@@ -51,8 +49,7 @@ git clone https://github.com/boughanmiyoussef/holbertonschool-simple_shell
 2. Navigate to the cloned directory.
 3. Compile the program:
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
-4. Run the program:
-`./hsh`
+4. Run the program:`./hsh`
 
 ## Using the Simple Shell
 Type a command and press Enter. The program will execute the command and display the output.
